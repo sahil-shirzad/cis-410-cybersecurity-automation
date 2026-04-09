@@ -1,18 +1,12 @@
-# CIS 410: Cybersecurity Automation
+## My Week 2 Infrastructure
 
-## About Me
-- Name: Sahil Shirzad
-- GitHub Username: sahil-shirzad
-- Major: Cybersecurity & Digital Forensics
-- Semester: Spring 2026
 
-## About This Course
-This repository is my CIS 410 Cybersecurity Automation portfolio. I will learn CI/CD, DevSecOps, containers, and cloud security.
 
-## What I Hope to Learn
-- CI/CD pipelines
-- Docker and containers
-- Cloud deployment
+Runner VM: ub-server
 
-## Fun Fact
-I enjoy solving problems and helping my team.
+
+
+Runner IP: 192.168.1.166
+
+
+Pipeline status: [![Hello Pipeline](https://github.com/sahil-shirzad/cis-410-cybersecurity-automation/actions/workflows/hello-pipeline.yml/badge.svg)](https://github.com/sahil-shirzad/cis-410-cybersecurity-automation/actions/workflows/hello-pipeline.yml)
