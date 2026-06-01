@@ -43,7 +43,7 @@
 ## 3. Monitoring Configuration
 
 - **Log-based alert:** `cis410-flask-app-alert` — fires on severity>=WARNING for cis410-flask-app
-- **Notification channel:** <!-- your student email -->
+- **Notification channel:** <!-- sahil786@students.highline.edu -->
 - **Billing budget:** `cis410-monthly-budget` — $20 limit, alerts at 50% / 90% / 100%
 
 ---
@@ -52,16 +52,16 @@
 
 **Q1: Why is roles/run.admin inappropriate for a CI/CD pipeline service account?**
 
-<!-- your answer — 2-3 sentences -->
+<!-- The roles/run.admin role provides permissions beyond what a CI/CD pipeline requires. It allows deleting services, modifying IAM policies, and changing traffic routing. Using roles/run.developer follows the principle of least privilege while still allowing deployments. -->
 
 ---
 
 **Q2: What is the security difference between storing a secret in GitHub Secrets vs. Google Secret Manager?**
 
-<!-- your answer — 2-3 sentences -->
+<!-- GitHub Secrets store secrets for workflows but provide limited auditing and access control. Google Secret Manager offers centralized secret management, versioning, detailed audit logs, and fine-grained IAM permissions. This makes Secret Manager more secure for production environments. -->
 
 ---
 
 **Q3: A coworker says "I will clean up IAM permissions after the project launches. For now I need everything to work fast." What is the risk of this approach?**
 
-<!-- your answer — 2-3 sentences -->
+<!-- Delaying IAM cleanup increases security risk because service accounts may keep excessive permissions longer than necessary. If an account is compromised, attackers could misuse those permissions to access or modify resources. Applying least privilege early reduces the attack surface. -->
